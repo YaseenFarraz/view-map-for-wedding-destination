@@ -42,7 +42,7 @@ body, html {
 /* Additional button styles */
 #deedarBtn {
   position: absolute;
-  bottom: 40px; /* Adjust this to your desired position */
+  bottom: 50px; /* Adjust this to your desired position */
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
