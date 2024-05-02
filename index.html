@@ -47,7 +47,11 @@
             align-items: center;
             justify-content: center;
             height: 100%;
-            margin-bottom: 50px; /* Ensure space at the bottom for the buttons */
+        }
+
+        .image-container {
+            position: relative;
+            margin-bottom: 20px; /* Adjust as needed */
         }
 
         .wedding-card {
@@ -80,10 +84,14 @@
     </div>
 
     <div class="container" style="display: none;"> <!-- Hide the content initially -->
-        <img src="welcomeimg2.svg" alt="Wedding Card Photo" class="wedding-card">
-        <button id="mapBtn" class="map-button"><a href="https://maps.app.goo.gl/xbiJ5rWLaSbnoBtm6" target="_blank">Click here to explore the map for the location of the Nikah ceremony</a></button>
-        <!-- New button for Deedar event and lunch venue -->
-        <button id="deedarBtn" class="map-button"><a href="https://maps.app.goo.gl/pZTY1oqHBdwJjQAd7" target="_blank">Click here to explore the map for the location of the Deedar event and lunch venue</a></button>
+        <div class="image-container">
+            <img src="welcomeimg2.svg" alt="Wedding Card Photo" class="wedding-card">
+            <div class="buttons">
+                <button id="mapBtn" class="map-button"><a href="https://maps.app.goo.gl/xbiJ5rWLaSbnoBtm6" target="_blank">Click here to explore the map for the location of the Nikah ceremony</a></button>
+                <!-- New button for Deedar event and lunch venue -->
+                <button id="deedarBtn" class="map-button"><a href="https://maps.app.goo.gl/pZTY1oqHBdwJjQAd7" target="_blank">Click here to explore the map for the location of the Deedar event and lunch venue</a></button>
+            </div>
+        </div>
     </div>
 
     <script>
