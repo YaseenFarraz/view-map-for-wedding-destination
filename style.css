@@ -6,8 +6,11 @@ body, html {
 }
 
 .container {
-  position: relative;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .wedding-card {
@@ -17,10 +20,7 @@ body, html {
 
 /* Existing button styles */
 .map-button {
-  position: absolute;
-  bottom: 50px; /* Keep this for the first button */
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 10px 0; /* Adjust vertical spacing */
   padding: 10px 25px;
   font-size: 10px;
   border: none;
@@ -31,26 +31,6 @@ body, html {
 }
 
 .map-button a {
-  color: rgba(174, 110, 84, 1);
-  text-decoration: underline;
-}
-
-/* Additional button styles */
-#deedarBtn {
-  position: absolute;
-  bottom: 20px; /* Adjust this to your desired position */
-  left: calc(50% + 5px); /* Push the button slightly to the right */
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  font-size: 10px;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  color: rgba(174, 110, 84, 1);
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#deedarBtn a {
   color: rgba(174, 110, 84, 1);
   text-decoration: underline;
 }
